@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Google Map Hello World Example</title>
+<style type="text/css">
+div#map_container{
+	width:290px;
+	height:200px;
+}
+</style>
+<script type="text/javascript" 
+   src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ 
+<script type="text/javascript">
+  function loadMap() {
+	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+  	}
+	else
+ 	 {// code for IE6, IE5
+ 		 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+	xmlhttp.open("GET","location.txt",false);
+	xmlhttp.send();
+	result=xmlhttp.responseText;
+	position=result.split("|");
+	lat = position[0];
+	lon = position[1];
+	//alert( "Lon :"+position[1]);
+	
+    var latlng = new google.maps.LatLng(lat, lon);
+    var myOptions = {
+      zoom: 10,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
+ 
+    var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map, 
+      title:"Hello !"
+    }); 
+ 
+  }
+</script>
+</head>
+ 
+<body onload="loadMap()">
+<div id="map_container"></div>
+</body>
+ 
+</html>

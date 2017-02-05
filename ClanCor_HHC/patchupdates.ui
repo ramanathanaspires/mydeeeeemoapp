@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Patchupdates</class>
+ <widget class="QDialog" name="Patchupdates">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label_Ver_SDK">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>187</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Checkupdates">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>330</y>
+     <width>101</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Check updates</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Ver_Clancor">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>147</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Ver_Coprocessor">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>227</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Clancor_HHC">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>147</y>
+     <width>142</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clancor_HHC [F1]   </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_CoProcessor">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>227</y>
+     <width>142</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Co-Processor [F3]   </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_HHC_SDK">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>187</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>HHC_SDK [F2]   </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_updates">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>330</y>
+     <width>71</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>241</x>
+     <y>330</y>
+     <width>71</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <zorder>pushButton_Checkupdates</zorder>
+  <zorder>checkBox_Clancor_HHC</zorder>
+  <zorder>checkBox_CoProcessor</zorder>
+  <zorder>checkBox_HHC_SDK</zorder>
+  <zorder>pushButton_updates</zorder>
+  <zorder>pushButton_Cancel</zorder>
+  <zorder>label_Ver_Coprocessor</zorder>
+  <zorder>label_Ver_Clancor</zorder>
+  <zorder>label_Ver_SDK</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_Checkupdates</tabstop>
+  <tabstop>checkBox_Clancor_HHC</tabstop>
+  <tabstop>checkBox_HHC_SDK</tabstop>
+  <tabstop>checkBox_CoProcessor</tabstop>
+  <tabstop>pushButton_updates</tabstop>
+  <tabstop>pushButton_Cancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

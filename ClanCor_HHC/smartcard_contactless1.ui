@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>smartcard_contactless</class>
+ <widget class="QDialog" name="smartcard_contactless">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(0,0,0);background-color: rgb(220, 220, 220);</string>
+  </property>
+  <widget class="QLabel" name="name_lblReader">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>12</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reader Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblReader">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>260</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(71, 109, 170);border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblATR">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>78</y>
+     <width>260</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(131, 0, 100);border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_lblUID">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>156</y>
+     <width>57</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblUID">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>170</y>
+     <width>260</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(85, 85, 127);border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_lblCardstat">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>80</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Card Status</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_lblATR">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>62</y>
+     <width>60</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ATR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCardstat">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>126</y>
+     <width>260</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(0, 81, 5);
+border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>8</y>
+     <width>301</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(231, 249, 255); border:1px solid gray;border-color:rgb(104, 0, 0); border-radius: 2px;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>name_lblReader</zorder>
+  <zorder>lblReader</zorder>
+  <zorder>lblATR</zorder>
+  <zorder>name_lblUID</zorder>
+  <zorder>lblUID</zorder>
+  <zorder>name_lblCardstat</zorder>
+  <zorder>name_lblATR</zorder>
+  <zorder>lblCardstat</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

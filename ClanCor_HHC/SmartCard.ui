@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SmartCard</class>
+ <widget class="QDialog" name="SmartCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(0,0,0);background-color: rgb(220, 220, 220);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>3</y>
+     <width>315</width>
+     <height>460</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox{color:rgb(231, 249, 255); border:1px solid gray;border-color:rgb(104, 0, 0); border-radius: 2px;}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="name_lblReader">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>14</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reader Name:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmb_ReaderName">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>12</y>
+      <width>185</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grpBx_main">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>40</y>
+      <width>313</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="lblCardstat">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>224</y>
+       <width>214</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(0, 81, 5);
+border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblATR">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>177</y>
+       <width>214</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">Background-color:rgb(255, 255, 244); color:rgb(131, 0, 100);border-width: 1px;border-color:rgb(0, 0, 0); border-style: solid;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Read">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>256</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Read / Write</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_lblCardstat">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>230</y>
+       <width>79</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Card Status:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_lblATR">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>193</y>
+       <width>40</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ATR:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_lblReader_2">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>70</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Card Mode:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSam">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SAM</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSmartcard1">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>91</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SMARTCARD1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSmartcard2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>100</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SMARTCARD2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCardMode">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>70</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grpBx_data">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>276</y>
+      <width>290</width>
+      <height>460</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnSave">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>233</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_UserID">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>116</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>User ID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_UserName">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>146</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>User Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_MobileNo">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>176</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mobile No:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_City">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>206</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>City:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_UserID">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>115</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_UserName">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>143</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_MobileNo">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>172</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCity">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>202</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>233</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <zorder>grpBx_main</zorder>
+   <zorder>grpBx_data</zorder>
+   <zorder>name_lblReader</zorder>
+   <zorder>cmb_ReaderName</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>cmb_ReaderName</tabstop>
+  <tabstop>btn_Read</tabstop>
+  <tabstop>txt_UserID</tabstop>
+  <tabstop>txt_UserName</tabstop>
+  <tabstop>txt_MobileNo</tabstop>
+  <tabstop>txtCity</tabstop>
+  <tabstop>btnSave</tabstop>
+  <tabstop>btnClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
